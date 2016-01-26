@@ -1,3 +1,6 @@
+$(document).ready(function () {
+
+
 var server = 'https://api.parse.com/1/classes/chatterbox';
 
 var cleanText = function(text) {
@@ -27,6 +30,9 @@ var refreshMessages = function() {
                                 $('<p />', {html: cleanText(item.text), class: 'text'}),
                                 $('<p />', {html: cleanText(item.roomname), class: 'room'}),
                                 $('<p />', {html: cleanText(item.createdAt), class: 'createdAt'}));
+      $('.username').first().click(function() {
+  console.log('test');
+});
     });
   });
 };
@@ -34,3 +40,6 @@ var refreshMessages = function() {
 refreshMessages();
 setTimeout(refreshMessages, 15000);
 
+
+
+});

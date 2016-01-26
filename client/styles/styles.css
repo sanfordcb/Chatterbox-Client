@@ -92,3 +92,8 @@ form input[type=text] {
 
 }
 
+.username {
+    cursor: pointer;
+    color: red;
+}
+
