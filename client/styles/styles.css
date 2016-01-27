@@ -94,7 +94,6 @@ form input[type=text] {
 
 .username {
     cursor: pointer;
-    color: red;
 }
 
 #popup {
@@ -135,4 +134,9 @@ textarea {
 
 .createdAt {
     font-size: 8px;
+}
+
+.friend {
+    font-weight: 800;
+    color: red;
 }
